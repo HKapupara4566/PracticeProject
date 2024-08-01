@@ -1,0 +1,34 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["ESNext"],
+    "allowJs": true,
+    "jsx": "react-native",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "noUncheckedIndexedAccess": true,
+    "typeRoots": ["./src/types"],
+    "types": ["jest", "react-native"],
+    "baseUrl": ".",
+    "paths": {
+      "@assets/*": ["src/assets/*"],
+      "@components/*": ["src/components/*"],
+      "@globalStyles/*": ["src/globalStyles/*"],
+      "@constants/*": ["src/constants/*"],
+      "@screens/*": ["src/screens/*"],
+      "@styles/*": ["src/styles/*"],
+      "@redux/*": ["src/redux/*"],
+      "@navigations/*": ["src/navigations/*"],
+      "@services/*": ["src/services/*"]
+    }
+  },
+  "exclude": ["node_modules", "build", "dist", "ios", "android"]
+}
