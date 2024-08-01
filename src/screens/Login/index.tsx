@@ -17,8 +17,8 @@ import { Strings } from "@constants/string";
 import { isValidEmail } from '@services/globalFunction';
 
 export const Login = () => {
-  const [email, setEmail] = useState<string>('test098@gmail.com');
-  const [password, setPassword] = useState<string>('Test@12345');
+  const [email, setEmail] = useState<string>('');
+  const [password, setPassword] = useState<string>('');
   const {isLoading} = useSelector<RootState, ICountry>(
     state => state.authSliceReducer,
   );
